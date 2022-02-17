@@ -1,6 +1,5 @@
 import 'reflect-metadata';
 import 'dotenv/config';
-import '../typeorm';
 import { errors } from 'celebrate';
 import cors from 'cors';
 import express, { NextFunction, Request, Response } from 'express';
@@ -9,6 +8,9 @@ import swaggerUi from 'swagger-ui-express';
 
 import { AppError } from '@shared/errors/AppError';
 import { router } from '@shared/infra/http/routes';
+
+import '@shared/container/providers/DividerProvider';
+
 
 import swaggerFile from '../../../swagger.json';
 
