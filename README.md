@@ -3,7 +3,7 @@
 ### Executando o projeto
 
   1. Execute ```yarn dev``` raiz da aplicação.
-  2. Caso não possua o docker instaldo na sua maquina siga essas instruções [https://github.com/bitnami/bitnami-docker-redis](https://github.com/bitnami/bitnami-docker-redis) 
+  2. Caso não possua o docker instaldo na sua maquina siga essas instruções [https://github.com/codeedu/wsl2-docker-quickstart](https://github.com/codeedu/wsl2-docker-quickstart) 
   1. Execute ```docker-compose up -d``` para iniciar o container do redis. 
   3. A aplicação estará disponível no endereço [http://localhost:3333](http://localhost:3333)
   4. Execute ``yarn test`` para rodar os testes unitarios da aplicação
