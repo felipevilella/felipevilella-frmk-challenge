@@ -3,11 +3,16 @@ import {
   getPrimeDivisors,
 } from '@shared/container/providers/DividerProvider';
 import { getRedis } from '@shared/container/providers/RedisProvider';
+import { AppError } from '@shared/errors/AppError';
 
 import { IDescompositionNumberDTO } from '../dtos/IDescompositionNumberDTO';
 
 class DecompositionNumberUseCase {
   async execute({ number }: IDescompositionNumberDTO): Promise<any> {
+    if (number < 1) {
+      throw new AppError('Number cannot be negative', 400);
+    }
+
     let primersDivisors = await getRedis(
       `${number.toString()}-primersDivisors`,
     );

@@ -68,8 +68,8 @@
                 }
                }
              },
-             "401": {
-               "description": "User Already exists"
+             "400": {
+               "description": "Number cannot be negative"
              }
            }
         }
