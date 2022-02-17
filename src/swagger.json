@@ -18,6 +18,61 @@
       }
     },
     "paths": {
-
+      "/decomposition": {
+        "post": {
+          "tags": ["Decomposition"],
+          "summary": "Decomposition number",
+           "description": "Decompose a number into all divisors, also enumerating those that are prime",
+           "requestBody": {
+             "content": {
+               "application/json": {
+                 "schema": {
+                   "type": "object",
+                   "properties": {
+                     "number": {
+                       "type": "number"
+                     }
+                   },
+                   "example": {
+                    "number": 45
+                   }
+                 }
+               }
+             }
+           },
+           "responses": {
+             "201": {
+               "description": "Created",
+               "security": [
+                { "bearerAuth": []}
+               ],
+               "content": {
+                "application/json": {
+                  "type": "string[]",
+                  "example": {
+                    "entry_number": 45,
+                    "dividing_numbers": [
+                      1,
+                      3,
+                      5,
+                      9,
+                      15,
+                      45
+                    ],
+                    "prime_divisors": [
+                      1,
+                      3,
+                      5
+                    ]
+                  }
+                }
+               }
+             },
+             "401": {
+               "description": "User Already exists"
+             }
+           }
+        }
+      }
     }
 }
