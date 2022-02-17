@@ -7,7 +7,7 @@
   1. Execute ```docker-compose up -d``` para iniciar o container do redis. 
   3. A aplicação estará disponível no endereço [http://localhost:3333](http://localhost:3333)
   4. Documentação em swagger para ter acesso a rota e testar os endpoints com as funções [https://localhost:3333/api-docs/](https://localhost:3333/api-docs/))
-  5. Rodar em segundo plano em servidor node dist/shared/infra/http/server.js &
+  5. Rodar em segundo plano em servidor ```node dist/shared/infra/http/server.js &```
 
 
 ### Comandos úteis
