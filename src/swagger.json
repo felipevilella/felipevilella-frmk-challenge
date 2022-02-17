@@ -1,0 +1,23 @@
+{
+    "openapi": "3.0.0",
+    "components": {        
+      "securitySchemes": {
+        "bearerAuth": {
+          "type": "http",
+          "scheme": "bearer",
+          "bearerFormat": "JWT"
+        }
+      }
+    },
+    "info": {
+      "title": "Frmk Challenge Documentation",
+      "description": "This is an API FRMK Challenge",
+      "version": "1.0.1",
+      "contact": {
+        "email":"felipevilellaalves@hotmail.com"
+      }
+    },
+    "paths": {
+
+    }
+}

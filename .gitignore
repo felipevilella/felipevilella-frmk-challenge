@@ -1,0 +1,10 @@
+.vscode/
+node_modules/
+build/
+dist/
+tmp/*
+!tmp/.gitkeep
+yarn-error.log
+.ENV
+.env_example
+coverage
